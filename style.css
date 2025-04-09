@@ -29,24 +29,28 @@ body {
   align-items: flex-end;
 }
 
-button.eba {
     display: flex;
- bottom: 0;
-position: fixed;
-  width: 100%;
+    bottom: 0;
+    position: fixed;
+    width: 98%;
     height: 100px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: row;
     box-sizing: border-box;
-background: black;
-  color: white;
-  border-radius: 100px;
-  font-weight: bold;
-  font-size: 20px;
-padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
-
+    background: black;
+    color: white;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 30px);
+    box-sizing: border-box;
+    padding: 20p;
+    margin: 20p;
+    left: 50%;
+    right: 0;
+    /* translate: 50%; */
+    transform: translateX(-50%);
 }
 
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
