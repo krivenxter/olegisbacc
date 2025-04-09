@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    width: auto;
+  height: 2000px;
+  
+}
+
+.wrapper-in {
+      top: 0;
+    position: sticky !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 5;
+  width: 100%;
+      padding: 20px;
+    box-sizing: border-box;
+  align-items: flex-end;
+}
+
+button.eba {
+    display: flex;
+  width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+background: black;
+  color: white;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 20px;
+padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+
+}
