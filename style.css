@@ -2,6 +2,10 @@ body {
   margin: 0px;
 }
 
+:root {
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -14,7 +18,6 @@ body {
 
 .wrapper-in {
       top: 0;
-    position: sticky !important;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -28,6 +31,8 @@ body {
 
 button.eba {
     display: flex;
+ bottom: 0;
+position: fixed;
   width: 100%;
     height: 100px;
     justify-content: center;
@@ -42,4 +47,10 @@ background: black;
   font-size: 20px;
 padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
 
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .footer-menu {
+    padding-bottom: calc(var(--safe-area-inset-bottom) + 1rem);
+  }
 }
